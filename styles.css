@@ -1,14 +1,68 @@
 /*  The CSS file showcasing the UI better way  */
+/* Basic body tag styling */
 body {
-    width: 300px;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-  }
-  
-  #reportResult {
-    margin-top: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-  }
+  width: 350px; /* Enhanced this to be wider for better spacing */
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /*Changed the background to Light */
+  color: #333; 
+}
+
+/* Container Styles */
+.container {
+  background-color: #ffffff; /* Container is white coloured */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Header Styles */
+h3 {
+  color: #0d6efd; /*This is the primary color for our Bootstrap  */
+  font-weight: bold;
+}
+
+/* Added the Date Picker Styles */
+.date-picker {
+  background-color: #e9ecef; /* Light gray background for inputs to differentiate */
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #0d6efd; 
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7; 
+}
+
+/* Alert Styles */
+.alert-info {
+  background-color: #e2f0ff; 
+  border: 1px solid #b6d4fe;
+  color: #0c63e4;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Report Result Styles */
+#reportResult {
+  background-color: #f8f9fa; /* Light gray background for the report result */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
