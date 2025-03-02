@@ -1,7 +1,7 @@
 /*  The CSS file showcasing the UI better way  */
 /* Basic body tag styling */
 body {
-  width: 350px; /* Enhanced this to be wider for better spacing */
+  width: 300px; /* Enhanced this to be wider for better spacing */
   padding: 20px;
   font-family: 'Arial', sans-serif;
   background-color: #f8f9fa; /*Changed the background to Light */
@@ -65,4 +65,7 @@ h3 {
   margin-top: 15px;
   font-size: 14px;
   color: #333;
+}
+.text-muted {
+  font-size: 12px;
 }
