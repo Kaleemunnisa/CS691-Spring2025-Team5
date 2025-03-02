@@ -3,7 +3,7 @@
     "manifest_version": 3,
     "name": "Smart Mail Mentor",
     "version": "1.0",
-    "description": "A Chrome extension to optimize time in email management using Gmail API.",
+    "description": "A Chrome extension to optimize the time in email management using Gmail API.",
     "permissions": ["identity", "storage", "https://www.googleapis.com/*"],
     "background": {
       "service_worker": "background.js"
