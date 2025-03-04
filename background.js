@@ -6,12 +6,14 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       // Authenticate and fetch emails
       authenticateAndFetchEmails(startDate, endDate)
         .then(emails => {
+          const parsedEmails = emails.map(email => parseEmail(email));
           // Send emails to app.py for NLP processing
           // Local Host Configuration setup needs to be done. TBC (To be completed)
+
           fetch('http://localhost:5000/process', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ emails })
+            body: JSON.stringify({emails: parsedEmails })
           })
             .then(response => response.json())
             .then(data => {
@@ -112,4 +114,44 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     const email = await response.json();
     return email;
   }
-    
+
+  // The below funtions is added to code as this will reduce the latency in the code
+  function parseEmail(email) {
+    const headers = email.payload.headers;
+    const parsedEmail = {};
+
+    // To Extract relevant headers
+    headers.forEach(header => {
+        switch (header.name) {
+            case 'From':
+                parsedEmail.from = header.value;
+                break;
+            case 'To':
+                parsedEmail.to = header.value;
+                break;
+            case 'Cc':
+                parsedEmail.cc = header.value;
+                break;
+            case 'Subject':
+                parsedEmail.subject = header.value;
+                break;
+            case 'Date':
+                parsedEmail.date = header.value;
+                break;
+        }
+    });
+    if (email.payload.parts) {
+      email.payload.parts.forEach(part => {
+          if (part.mimeType === 'text/plain') {
+              parsedEmail.body = Buffer.from(part.body.data, 'base64').toString('utf-8');
+          } else if (part.mimeType === 'text/html') {
+              parsedEmail.htmlBody = Buffer.from(part.body.data, 'base64').toString('utf-8');
+          }
+      });
+  } else if (email.payload.body.data) {
+      parsedEmail.body = Buffer.from(email.payload.body.data, 'base64').toString('utf-8');
+  }
+
+  return parsedEmail;
+}
+
