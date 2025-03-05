@@ -1,0 +1,39 @@
+function getGmailEmails() {
+  var threads = GmailApp.getInboxThreads();
+  for (var i = 0; i < threads.length; i++) {
+    var messages = threads[i].getMessages();
+    var msgCount = threads[i].getMessageCount();
+    
+    for (var j = 0; j < messages.length; j++) {
+      var message = messages[j];
+      if (message.isInInbox()) {
+        extractDetails(message, msgCount);
+      }
+    }
+  }
+}
+
+function extractDetails(message, msgCount) {
+  var spreadSheetId = ''; // Our google spreadsheet link
+  var sheetname = "rakesh"; //tab name
+  
+  var ss = SpreadsheetApp.openById(spreadSheetId);
+  var timezone = SpreadsheetApp.getActiveSpreadsheet().getSpreadsheetTimeZone();
+  var sheet = ss.getSheetByName(sheetname);
+  
+  const today = new Date();
+  var dateTime = Utilities.formatDate(message.getDate(), timezone, "dd-MM-yyyy");
+  var subjectText = message.getSubject();
+  var fromSend = message.getFrom();
+  var toSend = message.getTo();
+  var bodyContent = message.getPlainBody();
+
+  sheet.appendRow([dateTime, msgCount, fromSend, toSend, subjectText, bodyContent]);
+}
+
+function onOpen(e) {
+  SpreadsheetApp.getUi()
+    .createMenu('Click to Fetch Rakesh Kuchipudi Emails')
+    .addItem('Get Email', 'getGmailEmails')
+    .addToUi();
+}
