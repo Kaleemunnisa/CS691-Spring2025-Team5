@@ -44,7 +44,7 @@ https://www.figma.com/design/gCs3jtFB89wn83Ten4Q7Cq/Gmail-UI-Part-1%3A-Inbox-(Co
 
 1. Sathvik Chowdary Samineni (Lead)
 3. Purushotham Kalangi
-4. Rakesh Kuchipudi
+4. Rakesh Kuchipudi.
 
 
 
