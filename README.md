@@ -36,7 +36,7 @@ _Note : Context will be updated upon completion_
 
 ## Source Code for On-going Project 
 
-Refer to our master branch to view the code and methodology used
+Refer to our master branch to view the code and methodology used : https://github.com/Kaleemunnisa/CS691-Spring2025-Team5/blob/master/README.md
 
 ## Would you be keen to assist/enchance the tool? 
 
