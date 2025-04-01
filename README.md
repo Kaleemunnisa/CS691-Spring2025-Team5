@@ -35,9 +35,17 @@ _Note : Upon building the tool, the video is availabile for reference and ease o
 To load the the Smart Mail Mentor dependencies as a Chrome Extension, follow the below steps:
 
 #### Step 1: Load Chrome and Go to Extensions Page
-Open Google Chrome and navigate to settings to manage extensions
+> Open Google Chrome and navigate to settings to manage extensions
 #### Step 2: Enable Developer Mode
-
+> On the top right of the Extensions page, toggle Developer Mode ON.
+#### Step 3: Load the Extension
+> Click the Load unpacked button
+> In the file browser, navigate to Smart Mail Mentor project folder
+> Select the folder and click Open (or Select Folder).
+#### Step 4: Refresh the Extension
+> Once loaded, click the Refresh (⟳) icon on the extension card.
+#### Step 5: Pin the Extension
+> Click the Extensions (puzzle piece) icon on the top-right of Chrome.
 ## Source Code for On-going Project 
 
 Refer to our master branch to view the code and methodology used : https://github.com/Kaleemunnisa/CS691-Spring2025-Team5/blob/master/README.md
