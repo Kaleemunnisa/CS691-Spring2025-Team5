@@ -24,6 +24,9 @@ AI             : Natural Language Processing, NLTK (for tokenization and splitti
 IDEs           : Visual Studio Code
 Display/UI     : Chrome
 
+## Smart Mail Mentor Architecture 
+(To be Uploaded)
+
 ## Watch the full demo
 
 ~~The video illustration the tool work flow~~.
