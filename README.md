@@ -13,4 +13,4 @@ Also file is responsible to display the reports or inspect the insights from bac
 
 **background.js**     : The file is used to communicate with Gmail API and extract emails
 
-**nlp.py**            : The core of the project and the file is reposnible to process and extract meaningful information for the project
+**nlp.py or email_processor.ipynb**            : The core of the project and the file is reposnible to process and extract meaningful information for the project. The file contains the source code for pre-processing and summarization methods used to extract the meaningful information within the emails
