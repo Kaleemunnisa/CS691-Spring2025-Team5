@@ -34,6 +34,10 @@ _Note : Upon building the tool, the video is availabile for reference and ease o
 
 _Note : Context will be updated upon completion_
 
+## Source Code for On-going Project 
+
+Refer to our master branch to view the code and methodology used
+
 ## Would you be keen to assist/enchance the tool? 
 
 Since this tool can be used on a daily basis with the amount of vast emails generated over time, We'd be delighted to collaborate with you if you're interested. Feel free to reach out to us.
