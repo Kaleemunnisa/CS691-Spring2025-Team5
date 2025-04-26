@@ -53,6 +53,33 @@ To load the the Smart Mail Mentor dependencies as a Chrome Extension, follow the
 #### Step 6: Use the Extension
 > Click on the Smart Mail Mentor icon in the Chrome toolbar to open and test the tool.
 
+## Tool execution steps
+
+#### 1 : Post installation of the extension, on the top right corner click the extension
+
+![step1 1](https://github.com/user-attachments/assets/657a845f-3dd1-494c-981e-4907f6ae13c0)
+
+
+#### 2 : Enter the starting and ending timeframe for the application to generate the summarized report and click generate report
+
+![step1 2](https://github.com/user-attachments/assets/fbe59435-d6ea-4994-bc24-504e956aab43)
+
+
+#### 3 : Popup window from Google appears, Smart Mail Mentor wants to access your Gmail
+
+>> List of requested permissions (“Read your emails”).
+
+>> Our app's name and logo.
+
+>> Email address being used.
+
+> A big “Allow” or “Cancel” button to proceed ahead
+
+#### 3 : It will take few moments to fetch the emails and process them
+
+> The report is being displayed
+
+
 ## Source Code for On-going Project 
 
 Refer to our master branch to view the code and methodology used : https://github.com/Kaleemunnisa/CS691-Spring2025-Team5/blob/master/README.md
