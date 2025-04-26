@@ -25,7 +25,8 @@ IDEs           : Visual Studio Code
 Display/UI     : Chrome
 
 ## Smart Mail Mentor Architecture 
-(To be Uploaded)
+<img width="707" alt="Final Architecture Image" src="https://github.com/user-attachments/assets/95f2b5e8-6eeb-40cc-9844-fb4798ff8935" />
+
 
 ## Watch the full demo
 
