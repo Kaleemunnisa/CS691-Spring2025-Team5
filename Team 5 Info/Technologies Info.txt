@@ -6,6 +6,7 @@ Python
 
 AI:
 NLTK (for tokenization and splitting the text), Scikit-learn, Word2Vec, TextRank /BERTSUM,
+Enhanced Abstractive and Extractive Summarization
 
 IDEs:
 Visual Studio Code
