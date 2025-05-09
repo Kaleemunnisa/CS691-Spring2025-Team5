@@ -28,12 +28,6 @@ Display/UI     : Chrome
 <img width="707" alt="Final Architecture Image" src="https://github.com/user-attachments/assets/95f2b5e8-6eeb-40cc-9844-fb4798ff8935" />
 
 
-## Watch the full demo
-
-~~The video illustration the tool work flow~~.
-
-_Note : Upon building the tool, the video is availabile for reference and ease of use_
-
 ## Here is how you can install the extension within your Google Chrome
 
 To load the the Smart Mail Mentor dependencies as a Chrome Extension, follow the below steps:
